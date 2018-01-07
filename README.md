@@ -25,17 +25,17 @@ Poate avea urmatoarele valori:
 ### emoji_sentiment
 
 Poate avea urmatoarele valori: 
--1, daca textul nu contine hashtag-uri
-0, sentiment negativ
-2, sentiment neutru
-4, sentiment pozitiv
+- -1, daca textul nu contine emoji
+- 0, sentiment negativ
+- 2, sentiment neutru
+- 4, sentiment pozitiv
 
 ### text_sentiment
 
 Poate avea urmatoarele valori: 
-0, sentiment negativ
-2, sentiment neutru
-4, sentiment pozitiv
+- 0, sentiment negativ
+- 2, sentiment neutru
+- 4, sentiment pozitiv
 
 ### ner (Named Entity Recognition)
 
