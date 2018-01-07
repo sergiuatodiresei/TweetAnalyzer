@@ -17,43 +17,43 @@ I hate titanic 😒😂 #i #love #titanic
 ### hashtag_sentiment 
 
 Poate avea urmatoarele valori: 
-- -1, daca textul nu contine hashtag-uri
-- 0, sentiment negativ
-- 2, sentiment neutru
-- 4, sentiment pozitiv
+- **-1**, daca textul nu contine hashtag-uri
+- **0**, sentiment negativ
+- **2**, sentiment neutru
+- **4**, sentiment pozitiv
 
 ### emoji_sentiment
 
 Poate avea urmatoarele valori: 
-- -1, daca textul nu contine emoji
-- 0, sentiment negativ
-- 2, sentiment neutru
-- 4, sentiment pozitiv
+- **-1**, daca textul nu contine emoji
+- **0**, sentiment negativ
+- **2**, sentiment neutru
+- **4**, sentiment pozitiv
 
 ### text_sentiment
 
 Poate avea urmatoarele valori: 
-- 0, sentiment negativ
-- 2, sentiment neutru
-- 4, sentiment pozitiv
+- **0**, sentiment negativ
+- **2**, sentiment neutru
+- **4**, sentiment pozitiv
 
 ### ner (Named Entity Recognition)
 
 Contine:
 
-- text, textul primit de la utilizator
+- **text**, textul primit de la utilizator
 
-- topics (ideile principale extrase din text),  un array ce contine json-uri cu cheile name si confidence(cu valori intre 0 si 1, 1 reprezinta incredere maxima);
+- **topics** (ideile principale extrase din text),  un array ce contine json-uri cu cheile *name* si *confidence*(cu valori intre 0 si 1, 1 reprezinta incredere maxima);
 
-- social_tags, un array ce contine json-uri cu cheile name si importance(cu urmatoarele valori: 1 (importanta maxima), 2 (importanta medie), 3 (importanta scazuta));
+- **social_tags**, un array ce contine json-uri cu cheile *name* si *importance*(cu urmatoarele valori: 1 (importanta maxima), 2 (importanta medie), 3 (importanta scazuta));
 
-- industry_tags, un array ce contine json-uri cu cheile name si relevance(cu valori intre 0 si 1, 1 reprezinta relevanta maxima);
+- **industry_tags**, un array ce contine json-uri cu cheile *name* si *relevance*(cu valori intre 0 si 1, 1 reprezinta relevanta maxima);
 
-- entities, un array ce contine json-uri cu cheile name, type (care poate avea urmatoarele valori: Anniversary, City, Company, Continent, Country, Editor, EmailAddress, EntertainmentAwardEvent, Facility, FaxNumber,
+- **entities**, un array ce contine json-uri cu cheile *name*, *type* (care poate avea urmatoarele valori: Anniversary, City, Company, Continent, Country, Editor, EmailAddress, EntertainmentAwardEvent, Facility, FaxNumber,
 Holiday, IndustryTerm, Journalist, MarketIndex, MedicalCondition, MedicalTreatment, Movie, MusicAlbum, MusicGroup,
 NaturalFeature, OperatingSystem, Organization, Person, PharmaceuticalDrug, PhoneNumber, PoliticalEvent, Position,
 Product, ProgrammingLanguage, ProvinceOrState, PublishedMedium, RadioProgram, RadioStation, Region,
-SportsEvent, SportsGame, SportsLeague, Technology, TVShow, TVStation, URL), relevance (cu valori intre 0 si 1, 1 reprezinta relevanta maxima), confidence (doar daca type este person, cu valori intre 0 si 1, 1 reprezinta incredere maxima).
+SportsEvent, SportsGame, SportsLeague, Technology, TVShow, TVStation, URL), *relevance* (cu valori intre 0 si 1, 1 reprezinta relevanta maxima), *confidence* (doar daca type este person, cu valori intre 0 si 1, 1 reprezinta incredere maxima).
 
 
 
