@@ -17,10 +17,10 @@ I hate titanic 😒😂 #i #love #titanic
 ### hashtag_sentiment 
 
 Poate avea urmatoarele valori: 
--1, daca textul nu contine hashtag-uri
-0, sentiment negativ
-2, sentiment neutru
-4, sentiment pozitiv
+- -1, daca textul nu contine hashtag-uri
+- 0, sentiment negativ
+- 2, sentiment neutru
+- 4, sentiment pozitiv
 
 ### emoji_sentiment
 
