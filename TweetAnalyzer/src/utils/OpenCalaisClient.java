@@ -18,7 +18,7 @@ import org.json.JSONObject;
 
 public class OpenCalaisClient {
 	
-	public JSONArray getPropertyNamesAndValues(String text) throws IOException {
+	public JSONObject getPropertyNamesAndValues(String text) throws IOException {
 		
 		URL url = new URL(" https://api.thomsonreuters.com/permid/calais");
 		URLConnection con = url.openConnection();
@@ -39,7 +39,7 @@ public class OpenCalaisClient {
 		http.connect();
 		
 		
-		JSONArray jsonFinal = new JSONArray();
+		JSONObject jsonFinal = new JSONObject();
 		
 		try(OutputStream os = http.getOutputStream()) {
 		    os.write(out);
@@ -144,25 +144,25 @@ public class OpenCalaisClient {
 		    if(jsonArrayTopics != null && jsonArrayTopics.length() > 0 ){
 		    	JSONObject jsonObj = new JSONObject();
 		    	jsonObj.put("topics", jsonArrayTopics);
-		    	jsonFinal.put(jsonObj);
+		    	jsonFinal.put("topics", jsonArrayTopics);
 		    }
 		    
 		    if(jsonArraySocialTags != null && jsonArraySocialTags.length() > 0 ){
 		    	JSONObject jsonObj = new JSONObject();
 		    	jsonObj.put("social_tags", jsonArraySocialTags);
-		    	jsonFinal.put(jsonObj);
+		    	jsonFinal.put("social_tags", jsonArraySocialTags);
 		    }
 		    
 		    if(jsonArrayIndustryTags != null && jsonArrayIndustryTags.length() > 0 ){
 		    	JSONObject jsonObj = new JSONObject();
 		    	jsonObj.put("industry_tags", jsonArrayIndustryTags);
-		    	jsonFinal.put(jsonObj);
+		    	jsonFinal.put("industry_tags", jsonArrayIndustryTags);
 		    }
 		    
 		    if(jsonArrayEntities != null && jsonArrayEntities.length() > 0 ){
 		    	JSONObject jsonObj = new JSONObject();
 		    	jsonObj.put("entities", jsonArrayEntities);
-		    	jsonFinal.put(jsonObj);
+		    	jsonFinal.put("entities", jsonArrayEntities);
 		    }
 		    
 		    return jsonFinal;
